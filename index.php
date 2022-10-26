@@ -24,7 +24,11 @@ require_once('core/manejador.php');
         $controladorObjeto = new $controlador();
 
         // Verificar que el metodo exista
-        $controladorObjeto->{$metodo}();
+        if(  method_exists($controladorObjeto, $metodo)  ){
+            $controladorObjeto->{$metodo}();
+        } else {
+            echo ' El method no Existe';
+        }
 
     } else {
         echo 'El controlador no Existe';
