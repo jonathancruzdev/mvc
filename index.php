@@ -22,7 +22,7 @@ require_once('core/manejador.php');
 
         // Crea el objeto
         $controladorObjeto = new $controlador();
-
+        
         // Verificar que el metodo exista
         if(  method_exists($controladorObjeto, $metodo)  ){
             $controladorObjeto->{$metodo}();
