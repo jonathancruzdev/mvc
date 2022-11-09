@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="public/css/estilos.css">
-    <title>PANEL ABM</title>
-</head>
 
-<body>
 
     <main id="panel">
                             <!-- EDICION DE CATEGORIAS -->
@@ -179,10 +171,3 @@
         </div>   
 
     </main>
-    
-    <footer>
-
-    </footer>
-    
-</body>
-</html>

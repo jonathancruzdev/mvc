@@ -11,9 +11,12 @@
             $categoria = new CategoriaModel();
             $lista = $categoria->lista();
 
+            require_once('views/header.html');
             require_once('views/categoriaABMView.php');
-            print_r($lista);
-            echo '<h1> Renderizo Vista</h1>';
+            require_once('views/footer.html');
+
+            //print_r($lista);
+            //echo '<h1> Renderizo Vista</h1>';
         }
 
         public function crear( $parametros = array() ){
