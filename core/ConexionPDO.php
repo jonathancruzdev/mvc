@@ -1,7 +1,7 @@
 <?php
     class ConexionDB{
         private $server_name = 'localhost';
-        private $name_db = 'blog';
+        private $name_db = 'tienda';
         private $user_db = 'root'; 
         private $user_pass = '';
         private $objPDO;
