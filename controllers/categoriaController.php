@@ -15,7 +15,7 @@
             require_once('views/categoriaABMView.php');
             require_once('views/footer.html');
 
-            //print_r($lista);
+            // print_r($lista);
             //echo '<h1> Renderizo Vista</h1>';
         }
 
