@@ -2,7 +2,12 @@
     class indexController{
 
         public function index(){
+            require_once('views/header.html');
+            require_once('views/home.html');
+            
             echo '<h1> Home del controller</h1>';
+            require_once('views/footer.html');
+
         }
 
         public function loguear(){

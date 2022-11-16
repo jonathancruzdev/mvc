@@ -1,42 +1,33 @@
 <?php
     require_once 'core/ConexionPDO.php';
 
-    class UsuarioModel extends ConexionDB {
-        public $idProducto;
-        public $nombre;
-        public $idCategoria;
-        public $precio;
+    class ProductoModel extends ConexionDB {
+
+        public $id_instrumento;
+        public $nombreInstrumento;
+        public $marcaInstrumento;
+        public $descripcionInstrumento;
+        public $detallesInstrumento;
+        public $precioInstrumento;
+        public $cantidadInstrumento;
+        public $fotoInstrumento;
+        public $categoriaInstrumento;
+
+        public function listar(){
+            $this->setQuery("SELECT id_instrumento, nombreInstrumento,  precioInstrumento, fotoInstrumento
+                            FROM instrumentos");
+            $resultado = $this->obtenerRow();
+            return $resultado;
+
+        }
 
         public function guardar(){
-            $this->setQuery("INSERT INTO usuarios(nombre, apellido, email, password)
-                            VALUES(:nombre,:apellido, :emial, :passsword)");
+            $this->setQuery("");
             $this->ejecutar(array(
-                ':nombre' => $this->nombre,
-                ':apellido' => $this->apellido,
-                ':email' => $this->email,
-                ':password' => $this->password
-            ));
-        }
-
-        public function eliminar(){
-            $this->setQuery("DELETE usuario
-                             WHERE idUsuario = :idUsuario");
-            
-            $this->ejecutar(array(
-                ':idUsuario' => $this->idUsuario,
-            ));
-        }
-
-        public function login(){
-            $this->setQuery("SELECT idUsuario, nombre, email
-                             WHERE email = :email AND password = :password");
-            $this->obtenerRow(array(
-                        ':email' => $this->email,
-                        ':password' => $this->password
+                
             ));
         }
 
         
-
     }
 ?>

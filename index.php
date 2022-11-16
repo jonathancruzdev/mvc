@@ -35,19 +35,4 @@ require_once('core/manejador.php');
     }
 
 
-
-    echo '<br>';
-    echo $ruta;
-    echo '<br>';
-
-
-   // echo $controlador;
-    echo '<br>';
-   // echo $metodo;
-    echo '<br>';
-
-    //print_r($parametros);
-
-
-
 ?>
