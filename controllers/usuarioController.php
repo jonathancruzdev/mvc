@@ -6,8 +6,23 @@
         public $email;
 
         public function index( $parametros = array() ){
+            require_once('views/header.html');
 
-            echo '<h1> Inicio Usuario</h1>';
+            require_once('views/loginView.php');
+     
+            require_once('views/footer.html');
+
+        }
+
+        public function login($parametros = array()){
+            if(  isset( $_POST['email'] )  && isset( $_POST['clave'] )){
+                $email = $_POST['email'];
+                $clave = $_POST['clave'];
+
+                echo $email;
+
+            }
+
         }
 
         public function crear( $parametros = array() ){

@@ -34,6 +34,7 @@ header a:hover {
 footer {
     width: 90%;
     margin: auto;
+
 }
 footer nav {
     height: 50px;
@@ -110,18 +111,22 @@ body {
                                 /* PRODUCTOS */
 #productos {
     width: 90%;
-    min-height: 950px;
+    min-height: 100vh;
     display: grid;
     margin: auto;
+    background-color: brown;
 }
 
 .productos {
+    background-color: slateblue;
     padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(5, 230px);
     grid-template-rows: 230px 300px 230px;
     grid-gap: 20px;
     justify-content: center;
+    min-height: 100vh;
+
 }
 
 .productos h1 {
@@ -1149,13 +1154,10 @@ body {
     text-decoration: none;
 }
 
-.tabla-users a:hover {
+.tabla-users a:hover, .tabla-users tr:hover {
     color: orange;
 }
 
-.tabla-users tr:hover {
-    color: orange;
-}
 
 #admin .back {
     padding-top: 20px;

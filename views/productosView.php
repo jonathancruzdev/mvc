@@ -1,9 +1,10 @@
-<main id="productos">
+    <main id="productos">
         <div class="salir">
             <a href="">CERRAR SESION
             <img src="img/salir.png" alt="salir"></a>
         </div>
-<!-- Fila 1 -->        
+<!-- Fila 1 -->
+<div>    
         <div class="productos">
             <h1>PRODUCTOS</h1>
 
@@ -80,5 +81,5 @@
 
             </div>
         </div>
-
+<div>
     </main>
